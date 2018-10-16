@@ -9,7 +9,7 @@ typedef struct jogos{
   int ano;
 }t_jogos;
 
-// tentatica com vetores
+// tentativa com vetores
 
 // void inserir(t_jogos jogos[]){
   // int i;
@@ -57,14 +57,8 @@ v:printf("\t\t Bem vindo.\n");
         printf("\n\n");
         printf("\t\t---Consulta---\n\n" );
         printf("Digite a chave: \n");
-        printf("Chave:");
-        scanf("%d", &chaveAux);
-        if(chave == chaveAux){
-          printf("Chave correta, iniciando processo de leitura.\n");
-        }
-        else{
-          printf("Chave incorreta, voltando ao menu.\n");
-        }
+        // printf("Chave:");
+        // scanf("%d", &chaveAux);
         printf("\n\n");
         goto v;
 
@@ -72,29 +66,14 @@ v:printf("\t\t Bem vindo.\n");
         printf("\n\n");
         printf("\t\t---Alteração---\n\n" );
         printf("Digite a chave: \n");
-        printf("Chave:");
-        scanf("%d", &chave);
-        if(chave == chaveAux){
-          printf("Chave correta, iniciando processo de leitura.\n");
-        }
-        else{
-          printf("Chave incorreta, voltando ao menu.\n");
-        }
+        // printf("Chave:");
+        // scanf("%d", &chave);
         printf("\n\n");
         goto v;
 
       case 3: //excluir
         printf("\n\n");
         printf("\t\t---Exclusão---\n\n" );
-        printf("Digite a chave: \n");
-        printf("Chave:");
-        scanf("%d", &chave);
-        if(chave == chaveAux){
-          printf("Chave correta, iniciando processo de leitura.\n");
-        }
-        else{
-          printf("Chave incorreta, voltando ao menu.\n");
-        }
         printf("\n\n");
         goto v;
 
@@ -131,14 +110,11 @@ v:printf("\t\t Bem vindo.\n");
         fp = fopen ("dados.bin","rb");
         if (fp!=NULL)
         {
-            while (fp != feof) {
-              fread (&vet, sizeof(char),100,fp);
-              printf("FREAD %s\n", vet);
-            }
-        }
 
-          fscanf(fp,"%i %s %s %i\n", &a, c, var, &b);
-          printf(" Chave do jogo: %i\n Nome do jogo: %s\n Tipo do jogo: %s\n Ano de lançamento: %i\n", a,c,var,b);
+              fscanf(fp,"%i %s %s %i\n", &a, c, var, &b);
+              printf(" Chave do jogo: %i\n Nome do jogo: %s\n Tipo do jogo: %s\n Ano de lançamento: %i\n", a,c,var,b);
+
+        }
           fclose (fp);
         }
 
