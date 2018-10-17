@@ -15,7 +15,7 @@ typedef struct jogos{
   // int i;
   // int tamVet = sizeof(t_jogos)-1;
   // FILE *arq;
-  // arq = fopen("dados.txt", "ab");
+  // arq = fopen("dados.dat", "ab");
 
 	// if(arq != NULL)
 	// {
