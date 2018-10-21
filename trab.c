@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#define TAM 2
+#define TAM 50
 #define N 10
 
 
@@ -81,7 +81,7 @@ do {
       }
       printf("\n\n");
       fread(&jogos[0], sizeof(jogos), 1, arq2);
-      for (i = 0; i < count ; i++) {
+      for (i = 0; i < count -1; i++) {
         printf("ID = %d\nNOME = %s\nCATEGORIA = %s\nANO = %d\n", jogos[i].id, jogos[i].nome, jogos[i].cat, jogos[i].ano);
       }
 
